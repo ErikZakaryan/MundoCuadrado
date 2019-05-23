@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta los Cuadrados</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="Estilos/bootstrap.css">
+    <link rel=”shortcut icon” type=”image/jpg” href=”/favicon.jpg”/>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('./Imagenes/fondo.jpg')">
+    <div class="container" style="background: white">
+        <div class="row">
+            <div class="col-12">
+                <h1>Bienvenido al mundo de los Cuadrados.</h1>
+                <h2>Vamos a jugar un juego muy divertido.</h2>
+                <h2>Se trata de contar la cantidad de cuadrados que se pueden ver en el siguiente dibujo.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p>Si quiere jugar con otro tipo de dibujo, con otro tamaño, puede cambiar el tamaño eligiendo un numero de entre 1 y 10 </p>
+
+                <div class="input-group mb-3" style="box-shadow: 7px 7px 6px 1px rgba(138,138,138,1)">
+                    <input id="cantFilasColumnas" type="number" class="form-control" placeholder="Cantidad">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-primary" type="button" id="cambiarDibujo">Elegir Tamaño</button>
+                    </div>
+                </div>
+
+                <!-- <input id="cantFilasColumnas" type="number">
+                <button class="btn btn-primary" id="cambiarDibujo">Elegir ancho y alto</button> -->
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div id="dibujo"></div> <!--  ACÁ SE VAN A DIBUJAR LOS CUADRADOS PARA CONTAR -->
+        </div>
+        
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p>¿Cuántos cuadrados en total cree que hay?</p>
+                <div class="input-group mb-3" style="box-shadow: 7px 7px 6px 1px rgba(138,138,138,1);">
+                    <input id="resultadoDelUsuario" type="number" class="form-control" placeholder="Mi Resultado" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-primary" type="button" id="verificarResultado">Verificar</button>
+                    </div>
+                </div>
+                <p id="aviso" style="margin: 10px auto 10px auto; width: 50%"></p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p>Si no puede encontrar el resultado, puede verlo aquí.</p>
+                <button class="btn btn-primary" id="botonParaCalcular" style="margin-bottom: 10px; box-shadow: 7px 7px 6px 1px rgba(138,138,138,1);">Ver Resultado</button>
+                <p id="resultadoCantidadCuadrados" style="margin: 10px auto 10px auto; width: 50%; display: block"></p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+        <!-- <input id="resultadoDelUsuario" type="number">
+        <button class="btn btn-primary" id="verificarResultado">Verificar</button> -->
+            
+        
+    </div>
+    
+        
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="Funciones/funciones.js"></script>
+</body>
+</html>

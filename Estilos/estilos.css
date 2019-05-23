@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* font-family: 'Indie Flower', cursive;
+    font-family: 'Acme', sans-serif; */
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-repeat: repeat;
+}
+
+.container {
+    padding-bottom: 20px;
+    width: 70% !important;
+    height: 100%;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+
+#dibujo {
+    margin: 20px auto 30px auto !important;
+	width: 400px;
+	height: 400px;
+	float: left;
+    margin: 10px auto 10px auto;
+    box-shadow: 7px 7px 6px 1px rgba(138,138,138,1);
+}
+
+.celda{
+    box-sizing: border-box;
+    float: left;
+    outline: 2px solid black;
+}
+
+h1 {
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+    font-weight: 1000;
+}
+
+h2 {
+    font-size: 15px !important;
+}
+
+p {
+    font-size: 10px;
+}
+
+/* ACA LO QUE HACEMOS ES DARLE ANIMACIÓN AL AVISO QUE NOS LLEGA AL VERIFICAR NUESTRO RESULTADO, ESTO ES PARA QUE EL USUARIO NOTE QUE SE ACTUALIZÓ SI ES QUE VUELVE A INTENTAR COLOCAR OTRO RESULTADO */
+.run-animacion {
+    position: relative;
+    animation: anim 1s ease;
+}
+@keyframes anim {
+    25% {
+        transform: translate(0px, -5px); 
+    }
+    50% {
+        transform: translate(0px, 5px); 
+    }
+}
